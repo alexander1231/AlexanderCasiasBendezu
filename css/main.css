@@ -1,6 +1,6 @@
 
 .azul-noche{
-	background: #021830;
+	background: #021830 !important;
 }
 
 .verde-text{
@@ -37,7 +37,7 @@
 }
 
 .box.two{
-	height: 100vh !important;
+	height: 100% !important;
 	padding: 16px 0px;
 }	
 
