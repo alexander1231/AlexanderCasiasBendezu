@@ -12,6 +12,9 @@
   <script type="" src="js/materialize.js"></script>
 </head>
 <body>
+<div class="js">
+	<div id="preloader"></div>
+
 
 <nav>
     <div class="nav-wrapper azul-noche">
@@ -33,10 +36,12 @@
 	</div>
   <div class="center">
     <div class="container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod erat sed dui varius ultricies. Fusce fringilla placerat lacus, quis finibus dolor. Vivamus tincidunt gravida ex non viverra. Vivamus eu viverra augue. Vivamus pretium ornare tellus, et tristique enim mattis quis. Donec eget arcu sed lectus aliquam consequat. Integer condimentum ligula ac ex lobortis, et sollicitudin purus sodales. Integer mattis vulputate metus, nec rhoncus velit placerat ac. Etiam imperdiet ex vitae tellus vestibulum, id volutpat diam suscipit. Aenean eu sagittis diam. Quisque sed ex sagittis, fringilla diam non, sollicitudin purus. Aenean volutpat odio vitae posuere volutpat. Morbi vitae feugiat sem. Duis congue metus eget libero aliquet, at molestie est ultrices. Nullam vel augue vel nisl mollis pulvinar. Fusce elementum ipsum augue, ut hendrerit risus scelerisque a.
+        
     </div>
   </div>
 </div>
+
+
 
 <div class="box two"> 
   <div id="habilidades" class="center verde-text">
@@ -310,14 +315,14 @@
 </div>
 
 
-<div class="box" id="contact">
+<div class="box center-vertical" id="contact">
 	
 	<div class="row center">
 		<div class="col s12">
-			<h2>Contactame</h2>
+			<h2>Conáctame</h2>
 			<h4>Si necesitas ayuda siempre podre ayudarte</h4>
 			<p>
-				If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.
+				si tienes algún proyecto que quieras empezar, y piensas que necesitas mi ayuda con alguna cosa solo dimeló, envíame un email y te responderé los mas rápido posible
 			</p>
 
 			<a href="mailto:baryan.acb@gmail.com" class="waves-effect waves-light btn blue lighten-1"><i class="material-icons left">email</i>Enviame un email</a>
@@ -335,7 +340,18 @@
 	</div>
 </footer>
 
-
+</div>
 
 </body>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+});
+
+});
+</script>
 </html>

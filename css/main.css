@@ -56,3 +56,40 @@
 	margin-top: 20px;
 }
 
+.center-vertical{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#rombo{
+	width: 0;
+	height: 0;
+	border: 40vw solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -39vw;
+	margin: auto;
+}
+
+#rombo:after{
+	content: '';
+	position: absolute;
+	left: -40vw;
+	top:39.9vw;
+	width: 0;
+	height: 0;
+	border: 40vw solid transparent;
+	border-top-color: red;
+}
+
+.js div#preloader { 
+	position: fixed; 
+	left: 0; 
+	top: 0; 
+	z-index: 999; 
+	width: 100%; 
+	height: 100%; 
+	overflow: visible; 
+	background: #191f26 url('https://s-media-cache-ak0.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif') no-repeat center center; 
+}
